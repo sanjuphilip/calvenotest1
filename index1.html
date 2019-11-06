@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+ #searchbar {
+    
+  position:relative;
+  top:40px;
+  left:1150px;  
+    
+  }
+  #searchba {
+    
+  position:relative;
+  top:70px;
+  left:750px;  
+    
+  }
+  section {
+    position: relative;
+  }
+  placeholder {
+    
+  position:relative;
+  top:60px;
+  left:1150px;  
+    
+  }
+  #navbar {
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:40px;
+    
+    width: 100%;
+    background-color:#007380;
+	
+  }
+  nav ul {
+    margin: 0px;
+    padding: 5px 0px 5px 30px;
+	
+  }
+  nav li {
+    display: inline;
+    margin-right: 150px;
+
+  }
+  a {
+    text-decoration: none;
+	color:white;
+  }
+  #navbar:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+	animation-fill-mode:forwards;
+  }
+  @keyframes background-color{
+    100%{
+      background-color: #22E7C8;
+    }
+
+  }
+ :root {
+    --red-color: #189CA8;
+  }
+  h1{
+  text-align:center;}
+  h2{
+  text-align:center;}
+  h3{
+  text-align:center;}
+  .white-box {
+    
+    background:#007380;
+    height: 70px;
+    width:1520px;
+
+    
+  }
+  #orange-text {
+    color: orange;
+	padding-top:60px;
+	
+	font-size:50px;
+  }
+  .green-text {
+    color: black;
+	padding-top:0px;
+	font-size:20px;
+	
+  }
+  .fullCard {
+    color:blue;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 4px;
+	width:240px;
+	height:250px;
+  }
+  .blue-text {
+    color: blue;
+	padding-top:10px;
+	
+	font-size:25px;
+	
+  }
+   .links {
+    margin-right: 20px;
+    text-align: left;}
+ 
+  .fullCard {
+  position:absolute;
+    color:#189A97;
+    border: 5px solid #23F9F4;
+    border-radius: 15px;
+    margin: 5px 5px;
+    padding: 50px;
+	width:240px;
+	height:350px;
+	right:600px;
+  }
+  cardContent {
+    padding: 10px;
+	
+	}
+	.loader {
+	position:absolute;
+	
+	margin: 75px 685px;
+  border: 16px solid #f3f3f3;
+  border-radius: 70%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+ p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px; 
+  color: #09A7A1;
+  }
+  img{
+  height: 70px;
+  width:70px;
+  margin:30px 700px;
+  }
+  footer {
+    position:absolute;
+    bottom:10px;
+    background-color: #09A7A1;
+    color: white;
+    padding: 0.7em;}
+</style>
+<section>
+    <form id="searchbar">
+      <label for="search">Search:</label>
+      <input type="search" id="search" name="search">
+      <input type="submit" name="submit" value="upload">
+    </form>
+  </section>
+  
+  <nav id="navbar">
+      <ul>
+        <li><a href="file:///C:/Users/hp/Desktop/sanjucal.html?search=&submit=Go%21">Home</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Service</a></li>
+		<li><a href="">Engno Robotics</a></li>
+        <li><a href="">Contact</a></li>
+		<li><a href="file:///C:/Users/hp/Desktop/chumma.html">Login</a></li>
+		<li><a href="file:///C:/Users/hp/Desktop/NEW%20USER44.HTML">New User</a></li>
+      </ul>
+    </nav>
+	<img src="C:\Users\hp\Downloads\IMG-20191011-WA0023.jpg" alta="logo">
+
+<h1 id="orange-text" class="pink-text blue-text" style="color: #007380">Welcome to calveno</h1>
+<div class="penguin">
+  <div class="penguin-bottom">
+    <div class="right-hand"></div>
+    <div class="left-hand"></div>
+    <div class="right-feet"></div>
+    <div class="left-feet"></div>
+  </div>
+  <div class="penguin-top">
+    <div class="right-cheek"></div>
+    <div class="left-cheek"></div>
+    <div class="belly"></div>
+    <div class="right-eye">
+      <div class="sparkle"></div>
+    </div>
+    <div class="left-eye">
+      <div class="sparkle"></div>
+    </div>
+    <div class="blush-right"></div>
+    <div class="blush-left"></div>
+    <div class="beak-top"></div>
+    <div class="beak-bottom"></div>
+  </div>
+</div>
+
+<h2 class="green-text">Your Medical Assistant</h2>
+<h3 style="color=#24A6C2">simple better accurate</h3>
+<h3 class="green-text">launches in </h3>
+
+
+<div class="loader"></div>
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 1, 2020 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</div>
+
+ 
+
+<footer>&copy; 2019 ENGNO ROBOTICS</footer>
